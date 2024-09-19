@@ -71,6 +71,8 @@ Alternatively it is possible that the lectors made a **Pull Request** to your re
 You can accept en merge this pull request to get your (online) repo up-to-date!
 
 ![alt text][img_merge_pr]
+![alt text][img_confirm_merge]
+
 
 Finally pull the changes into your local repository: 
 
@@ -169,4 +171,5 @@ It is recommended to **do a git commit every time you complete an exercise**.
 [img_sync_fork]:Images/sync_fork.png "Sync fork"
 [img_pr]:Images/pr.png "Pull Request"
 [img_merge_pr]:Images/merge_pr.png "Merge Pull Request"
+[img_confirm_merge]:Images/confirm_merge.png "Confirm Merge"
 [img_pull_changes]:Images/pull_changes.png "Pull Changes"
