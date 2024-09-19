@@ -1,0 +1,30 @@
+﻿<Window x:Class="CardGames.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CardGames.Desktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="8" Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="8" Background="White">
+            <TextBlock HorizontalAlignment="Center" FontSize="22" FontWeight="Bold">Previous card</TextBlock>
+            <TextBlock x:Name="PreviousCardTextBlock" HorizontalAlignment="Center" FontSize="16" Margin="12" Background="Beige" Width="150" Height="300" TextAlignment="Center"></TextBlock>
+        </StackPanel>
+        <StackPanel Margin="8" Background="White" Grid.Column="1">
+            <TextBlock HorizontalAlignment="Center" FontSize="22" FontWeight="Bold">Current card</TextBlock>
+            <TextBlock x:Name="CurrentCardTextBlock" HorizontalAlignment="Center" FontSize="16" Margin="12" Background="Beige" Width="150" Height="300" TextAlignment="Center"></TextBlock>
+        </StackPanel>
+        <StackPanel Margin="8" Background="White" Grid.Column="2">
+            <TextBlock HorizontalAlignment="Center" FontSize="22" FontWeight="Bold">Higher or Lower?</TextBlock>
+            <Button Margin="8" Padding="8" Content="Higher" FontSize="18" Click="HigherButton_Click"/>
+            <Button Margin="8" Padding="8" Content="Lower" FontSize="18" Click="LowerButton_Click"/>
+            <TextBlock x:Name="MessageTextBlock" HorizontalAlignment="Center" FontSize="16" Margin="12" Foreground="Red" TextAlignment="Center">Message</TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
