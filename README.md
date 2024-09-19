@@ -65,8 +65,8 @@ You need a way to pull changes in the *upstream* repository into the *origin* re
 * Add a new remote named **upstream** that points to the original online repository made by the lectors.
      * Click on the *Add* button
           * Name: *upstream*
-          * Fetch: *https://github.com/pxlit-projects/Guts-DotNetAdvanced-23-24*
-          * Push: *https://github.com/pxlit-projects/Guts-DotNetAdvanced-23-24*
+          * Fetch: *https://github.com/pxlit-projects/Guts-DotNetAdvanced-24-25*
+          * Push: *https://github.com/pxlit-projects/Guts-DotNetAdvanced-24-25*
      * Click on *Save*
      * Open a command prompt and navigate to the folder that contains your local copy of the *origin* repository. Tip: in Visual Studio you can open a command prompt in the correct folder via the menu: *Git -> Open in Command Prompt*
      * Execute the command **git pull upstream main --allow-unrelated-histories**. This command downloads the commits made by the lectors and tries to merge them with your last local commit.
@@ -153,6 +153,7 @@ It is recommended to **do a git commit every time you complete an exercise**.
 It could happen that the lecturers fix bugs in the automated tests of the startcode or add new exercises and/or tests. These changes will happen in the **upstream** repository and you will need to get those changes in the **origin** repository.
 Follow the steps below to get the new version of the code:
 
+- TODO
 - Commit your work locally (see previous section)
 - Open a command prompt and navigate to the folder that contains your local copy of the *origin* repository. Tip: in Visual Studio you can open a command prompt in the correct folder via the menu: *Git -> Open in Command Prompt*
 - Enter the command *git pull upstream main*. This command downloads the new commits from the *upstream* repository and tries to merge them with your last local commit.
