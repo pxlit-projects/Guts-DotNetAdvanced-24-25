@@ -22,13 +22,13 @@ The assignments for each part can be found in de README.md in the folder of the 
 
 ### Accept the GitHub Classroom assignment
 We will work with GitHub Classroom for the Guts PE.
-The idea is that you make an online copy of the repository containing the startcode of the exercises. Only you (and the lectors) will have access to this online copy.
+The idea is that you make an online fork of the repository containing the startcode of the exercises. Only you (and the lectors) will have access to this online copy.
 
 To proceed you need a GitHub account. If you don't have one yet, register youself via https://github.com. 
 
-Now go to **https://classroom.github.com/a/bs13fnJZ**
+Now go to **https://classroom.github.com/a/BEhmlUGp**
 
-Accept the assignment and GitHub will make that online copy of the repository containing the startcode. 
+Accept the assignment and GitHub will make that online fork of the repository containing the startcode. 
 GitHub Classroom will show you the url of your repository. Navigate to this url and mark it as a favorite in your browser.
 
 ### Clone the repository
@@ -51,26 +51,34 @@ Now you have a local copy of the online repository in which you can complete you
 
 Double click the solution that contains the exercises you want to work on. Alternatively, you can just double click a solution file (.sln) from an explorer window to start up Visual Studio with the solution opened up.
 
-### Make a link with the original repository of the lectors (upstream)
-Exercises will be added and changes will be made during the course. These changes will happen in the original repository made by the lectors (your online repository is a copy of this repository). We will call the original repository of the lectors the **upstream** repository.
+### New exercises and bugfixes
+Exercises will be added and changes will be made during the course. These changes will happen in the original repository made by the lectors (your online repository is a fork of this repository). We will call the original repository of the lectors the **upstream** repository.
 Your personal online repository will be called the **origin** from now on.
 
 You need a way to pull changes in the *upstream* repository into the *origin* repository. Follow the instructions below to make this possible. 
 
-> [!IMPORTANT] 
-> **It is important that you execute the instructions before pushing your first own commit to the origin!!**
+Your personal GitHub page will show the following message if there are updates in the **upstream** repository: 
 
-* In Visual Studio, navigate in the menu to *Git -> Manage Remotes...*
-* The *origin* (your personal online repo) is already configured
-* Add a new remote named **upstream** that points to the original online repository made by the lectors.
-     * Click on the *Add* button
-          * Name: *upstream*
-          * Fetch: *https://github.com/pxlit-projects/Guts-DotNetAdvanced-23-24*
-          * Push: *https://github.com/pxlit-projects/Guts-DotNetAdvanced-23-24*
-     * Click on *Save*
-     * Open a command prompt and navigate to the folder that contains your local copy of the *origin* repository. Tip: in Visual Studio you can open a command prompt in the correct folder via the menu: *Git -> Open in Command Prompt*
-     * Execute the command **git pull upstream main --allow-unrelated-histories**. This command downloads the commits made by the lectors and tries to merge them with your last local commit.
-     * Execute the command **git push orgin main**. This commands will push (upload) the local commits to your online repository (*origin*).  
+![alt text][img_repo_behind]
+
+To update your repo you can click on the **Sync Fork** button:
+![alt text][img_sync_fork]
+
+Alternatively it is possible that the lectors made a **Pull Request** to your repository: 
+
+![alt text][img_pr]
+
+You can accept en merge this pull request to get your (online) repo up-to-date!
+
+![alt text][img_merge_pr]
+![alt text][img_confirm_merge]
+
+
+Finally pull the changes into your local repository: 
+
+![alt text][img_pull_changes]
+
+
 
 ### Register on [guts-web.pxl.be](https://guts-web.pxl.be)
 
@@ -148,19 +156,6 @@ It is recommended to **do a git commit every time you complete an exercise**.
 
 - By clicking on the *Solution Explorer* tab you go back to the main view for this local repository
 
-#### Get a new version of the start code
-
-It could happen that the lecturers fix bugs in the automated tests of the startcode or add new exercises and/or tests. These changes will happen in the **upstream** repository and you will need to get those changes in the **origin** repository.
-Follow the steps below to get the new version of the code:
-
-- TODO
-
-- Commit your work locally (see previous section)
-- Open a command prompt and navigate to the folder that contains your local copy of the *origin* repository. Tip: in Visual Studio you can open a command prompt in the correct folder via the menu: *Git -> Open in Command Prompt*
-- Enter the command *git pull upstream main*. This command downloads the new commits from the *upstream* repository and tries to merge them with your last local commit.
-- Attention: local changes that were not in a local commit will get lost doing a pull
-- Close the command prompt. Navigate to the *Branch History* window (*Git -> View Branch History*). You should see the commits (your local commits, the commits of the lectors and a merge commit). Push (upload) these local commits to your online repository (*origin*) by clicking on the *Push* link
-
 [img_projects]:Images/projects.png "Solution for chapter five with its projects"
 [img_clone_vs]:Images/clone_vs.png "Clone a project in Visual Studio"
 [img_clone_url]:Images/clone_url.png "Copy repository url"
@@ -172,3 +167,9 @@ Follow the steps below to get the new version of the code:
 [img_chapter_contents]:Images/chaptercontents.png "Chapter contents"
 [img_commit_your_work]:Images/commit_your_work.png "Commit your work"
 [img_git_changes]:Images/git_changes.png "Git Changes"
+[img_repo_behind]:Images/behind.png "Repo is behind"
+[img_sync_fork]:Images/sync_fork.png "Sync fork"
+[img_pr]:Images/pr.png "Pull Request"
+[img_merge_pr]:Images/merge_pr.png "Merge Pull Request"
+[img_confirm_merge]:Images/confirm_merge.png "Confirm Merge"
+[img_pull_changes]:Images/pull_changes.png "Pull Changes"
