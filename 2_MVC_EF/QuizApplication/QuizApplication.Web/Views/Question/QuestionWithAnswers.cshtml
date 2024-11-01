@@ -1,0 +1,23 @@
+﻿<div class="text-center">
+    <h1>Show the question here (from the viewmodel)</h1>
+    @* Make this link work *@
+    <a>Back</a>
+
+</div>
+<hr />
+<div class="row">
+
+    @* If an answer is correct: *@
+    <a class="col col-sm-6 text-reset text-decoration-none" onclick="$(this).children()[0].style.backgroundColor='green';">
+        <div class="card p-5 text-center">
+            Answer text of correct answer
+        </div>
+    </a>
+
+    @* else: *@
+    <a class="col col-sm-6  text-reset text-decoration-none" onclick="$(this).children()[0].style.backgroundColor='red';">
+        <div class="card p-5 text-center">
+            Answer text wrong answer
+        </div>
+    </a>
+</div>
