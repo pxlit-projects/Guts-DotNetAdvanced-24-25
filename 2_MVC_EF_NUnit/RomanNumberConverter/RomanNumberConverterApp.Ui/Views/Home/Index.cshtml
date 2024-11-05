@@ -1,0 +1,31 @@
+﻿@model RomanNumberConverterApp.Ui.Models.ConvertViewModel
+@{
+    ViewData["Title"] = "Home";
+    string validationClass = string.IsNullOrEmpty(Model.ErrorMessage) ? "" : "is-invalid";
+}
+<div class="container-fluid">
+    <h1 class="display-4">Roman number converter</h1>
+    <p>Fill in a number between 1 and 3999 and click on the button to see the Roman notation.</p>
+    <form asp-action="Index" method="post" novalidate>
+        <div class="row mb-3">
+            <label asp-for="Number" class="col-md-2 col-form-label"></label>
+            <div class="col-md-6 mb-3">
+                <input asp-for="Number" class="form-control @validationClass"></input>
+                <div class="invalid-feedback">
+                    @Model.ErrorMessage
+                </div>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary form-control">Convert</button>
+            </div>
+        </div>
+        @if (!string.IsNullOrEmpty(Model.RomanNumber))
+        {
+            <div class="row mb-3">
+                <div class="col-md-6 offset-md-2 alert alert-primary" role="alert">
+                    <span class="fs-1">@Model.RomanNumber</span>
+                </div>
+            </div>
+        }
+    </form>
+</div>
