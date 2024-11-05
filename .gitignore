@@ -396,4 +396,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-/2_MVC_EF/QuizApplication/QuizApplication.Web/wwwroot
+/2_MVC_EF_NUnit/QuizApplication/QuizApplication.Web/wwwroot
