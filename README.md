@@ -16,7 +16,7 @@ The matching test projects contain **automated tests** that can be run to check 
 The assignments for each part can be found in de README.md in the folder of the part or by clicking on one of the links below:
 * [Part 1 - C# Language features](1_LanguageFeatures/README.md)
 * [Part 2 - ASP.NET Core MVC & Entity Framework & NUnit](2_MVC_EF_NUnit/README.md)
-* UNDER CONSTRUCTION [Part 3 - ASP.NET Rest API & Razor pages]
+* [Part 3 - ASP.NET Rest API & Razor pages](3_API-RazorPages/README.md)
 
 ## Getting Started
 

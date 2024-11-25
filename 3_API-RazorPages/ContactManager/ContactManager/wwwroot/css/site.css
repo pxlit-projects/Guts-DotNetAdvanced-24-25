@@ -1,0 +1,57 @@
+/* Reset some default browser styles */
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #0074e4;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Increased margin to create more space */
+}
+
+.footer {
+    height: 20px; /* Define a specific height for the footer */
+}
+
+.button {
+    background-color: #0074e4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+    .button:hover {
+        background-color: #0058aa;
+    }
+
+
