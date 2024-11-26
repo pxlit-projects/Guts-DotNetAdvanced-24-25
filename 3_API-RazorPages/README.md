@@ -2,3 +2,6 @@
 
 ## Razor Pages - ContactManager Application
 The assignment can be found on BlackBoard (Labs)
+
+## REST api - HealthHub Application
+The assignment can be found on BlackBoard (Labs)
